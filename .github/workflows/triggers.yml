@@ -2,16 +2,15 @@ name: Build and Run C# Program
 
 on: 
   issues:
-    types:[opened, edited, closed]
+    types: [opened, edited, closed]
   push: 
-   branches: 
-     -'aprendiendo-github-actions'
-   issue_comment:
+    branches: 
+      - 'aprendiendo-github-actions'
+  issue_comment:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: REVISAR REPOSITORIO
       uses: actions/checkout@v2
-
- 
