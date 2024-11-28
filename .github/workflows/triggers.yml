@@ -6,7 +6,7 @@ on:
   push: 
    branches: 
      -'aprendiendo-github-actions'
-  issue_comment:
+   issue_comment:
 jobs:
   build:
     runs-on: ubuntu-latest
